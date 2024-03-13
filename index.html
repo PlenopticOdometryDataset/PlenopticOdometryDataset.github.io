@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="A Synchronized Stereo and Plenoptic Visual Odometry Dataset">
+  <meta name="keywords" content="Plenoptic Camera, SLAM">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Synchronized Stereo and Plenoptic Visual Odometry Dataset</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">A Synchronized Stereo and Plenoptic Visual Odometry Dataset</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://niclas-zeller.de" target="_blank">Niclas Zeller</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              Franz Quint<sup>1</sup>,</span>
+            <span class="author-block">
+              Uwe Stilla<sup>2</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Karlsruhe University of Applied Sciences,</span>
+            <span class="author-block"><sup>2</sup>Technical University of Munich</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/1807.09372.pdf" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="columns is-centered">
+    <img src="./static/images/vo_ground_truth.png"/>
+</div>
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Description. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Description</h2>
+                <div class="content has-text-justified">
+                    <p>
+                    We present a visual odometry dataset for the evaluation and comparison of plenoptic, monocular and stereo camera based visual odometry and SLAM algorithms. The dataset contains 11 sequences recorded by a hand-held platform consisting of a plenoptic camera and a pair of stereo cameras. The sequences comprising different indoor and outdoor sequences with trajectory length ranging from 25 meters up to several hundred meters. The recorded sequences show moving objects as well as changing lighting conditions.
+                    </p>
+                    <p>
+                    To the best of our knowledge the presented dataset is the first public dataset of its kind and the first one which includes sequences of large scale scenes recorded by a plenoptic camera.
+                    </p>
+                    <p>
+                    While the light field (or plenoptic) sequences were recorded by a Raytrix camera, which is a focused plenoptic camera with a multi-focal micro lens array (MLA), the stereo images were recorded by a pair of industrial grade cameras. All three camera were hardware-triggered to obtain time-synchronized image sequences.
+                    </p>
+                    <p>
+                    All sequences are performed in a large loop where start and end show the same scene. Thus, the start and end segment of a sequence are used to measure the pose error of an algorithm accumulated over the entire loop. For all sequences loop closure trajectories are supplied and serve as ground truth.
+                    </p>
+                    <p>
+                    For the cameras, intrinsic camera parameters, as well as white images which are used for vignetting correction are supplied.
+                    </p>
+                    <p>
+                    The dataset contains two different camera calibration datasets. The calibration dataset “dataset_01” is valid for the sequences “seq_001” to “seq_005”, while “dataset_02” is valid for “seq_006” to “seq_011”.
+                    </p>
+                    <p>
+                    More information regarding the recorded sequences, the sensor setup, the camera calibration as well as the proposed evaluation method can be found in related publications listed below.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--/ Description. -->
+        
+        <!-- Related Publications. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Related Publications</h2>
+                <div class="content has-text-justified">
+                    <p>
+                    Zeller N., Quint F., Stilla U. (2018): <b>Scale-Awareness of Light Field Camera based Visual Odometry; 15th European Conference on Computer Vision</b>, ECCV, September 8 – 14.
+                    [<a href="https://openaccess.thecvf.com/content_ECCV_2018/papers/Niclas_Zeller_Scale-Awareness_of_Light_ECCV_2018_paper.pdf" target="_blank">paper</a>]
+                    [<a href="https://www.youtube.com/watch?v=NNZvfAAtud0" target="_blank">video</a>]
+                    </p>
+                    <p>
+                    Zeller N., Quint F., Stilla U. (2018): <b>A Synchronized Stereo and Plenoptic Visual Odometry Dataset</b>, arXiv:1807.09372.
+                    [<a href="https://arxiv.org/pdf/1807.09372.pdf" target="_blank">paper</a>]
+                    [<a href="https://arxiv.org/abs/1807.09372" target="_blank">ArXiv</a>]
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--/ Related Publications. -->
+        
+        <!-- Data. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">How to get the data?</h2>
+                
+                <!-- Sequences. -->
+                <h3 class="title is-4">Sequences</h3>
+                <div class="content has-text-justified">
+                    <p>
+                    The following table contains the entire image sequences of the dataset.
+                    </p>
+                    
+                    <p>
+                    Matlab scripts to preprocess the image sequences and to measure the drift of an algorithm with respect to the ground truth can be found below.
+                    </p>
+
+                    </p>
+                    <b>[<a href="https://os5.mycloud.com/action/share/b16fdaa3-5eca-4b72-9976-f676d597a343" target="_blank">download all sequences</a>]</b>
+                    </p>
+                    
+                    seq_001 [<a href="https://os5.mycloud.com/action/share/0cc012a0-4255-4ea2-b58a-3a9807db6f7b" target="_blank">plenoptic</a>] [<a href="https://os5.mycloud.com/action/share/6b88b329-f06f-42eb-bd8a-3f119c3019d7" target="_blank">stereo</a>]<br />
+                    seq_002 [<a href="https://os5.mycloud.com/action/share/441033fc-8bcc-46af-97ee-c5fbd7174b70" target="_blank">plenoptic</a>] [<a href="https://os5.mycloud.com/action/share/db6a4412-96bc-4651-a5a0-b39d94d1b209" target="_blank">stereo</a>]<br />
+                    seq_003 [<a href="https://os5.mycloud.com/action/share/ebe4f1b6-e934-4ce0-8558-9e2045d19cac" target="_blank">plenoptic</a>] [<a href="https://os5.mycloud.com/action/share/20e908f6-751d-4f3f-abb3-e711292b7c53" target="_blank">stereo</a>]<br />
+                    seq_004 [<a href="https://os5.mycloud.com/action/share/0368dc6e-124e-42aa-8202-cc595f673d23" target="_blank">plenoptic</a>] [<a href="https://os5.mycloud.com/action/share/f4cc29f8-1bc0-4e28-8a08-49a2b15c6b86" target="_blank">stereo</a>]<br />
+                    seq_005 [<a href="https://os5.mycloud.com/action/share/bb7f8bc5-e3e9-4cfd-9924-b65a41e512f5" target="_blank">plenoptic</a>] [<a href="https://os5.mycloud.com/action/share/f7e2baeb-59bd-4c07-af00-f83c5518144a" target="_blank">stereo</a>]<br />
+                    seq_006 [<a href="https://os5.mycloud.com/action/share/544b1cfb-3900-4380-bc3b-06836f45dda3" target="_blank">plenoptic</a>] [<a href="https://os5.mycloud.com/action/share/759ceec8-7531-4779-90b8-3b90e5846413" target="_blank">stereo</a>]<br />
+                    seq_007 [<a href="https://os5.mycloud.com/action/share/3c0cdde0-3ef0-42e7-bc5e-7998a16f2e74" target="_blank">plenoptic</a>] [<a href="https://os5.mycloud.com/action/share/c13267fe-34fa-439d-abcf-2648890e53a7" target="_blank">stereo</a>]<br />
+                    seq_008 [<a href="https://os5.mycloud.com/action/share/e8bee36f-e0da-4716-a089-8a81eee09aed" target="_blank">plenoptic</a>] [<a href="https://os5.mycloud.com/action/share/d63cd095-9e07-489f-830a-491d5f8931bf" target="_blank">stereo</a>]<br />
+                    seq_009 [<a href="https://os5.mycloud.com/action/share/d244bf3b-a78f-4e1f-a4aa-33663b78b09e" target="_blank">plenoptic</a>] [<a href="https://os5.mycloud.com/action/share/329a2715-45d3-451f-979a-98c1107bcfc9" target="_blank">stereo</a>]<br />
+                    seq_010 [<a href="https://os5.mycloud.com/action/share/b490fcce-1270-4391-9017-ec188887c1ba" target="_blank">plenoptic</a>] [<a href="https://os5.mycloud.com/action/share/7de1c5b8-9def-4ed3-946e-beaa3655254b" target="_blank">stereo</a>]<br />
+                    seq_011 [<a href="https://os5.mycloud.com/action/share/cafed65e-6ec8-4787-a90e-e0118a557055" target="_blank">plenoptic</a>] [<a href="https://os5.mycloud.com/action/share/4cd1f0fe-5803-4063-9a91-90e9059c54b0" target="_blank">stereo</a>]
+                    </p>
+                </div>
+                <!--/ Sequences. -->
+                
+                <!-- Camera Calibration. -->
+                <h3 class="title is-4">Camera Calibration Data</h3>
+                <div class="content has-text-justified">
+                    <p>
+                    The following table contains two compete calibration datasets, including images used for calibration, coordinates of the detected marker points, and predefined standards for scale observation.
+                    </p>
+                    <p>
+                    While calibration dataset “dataset_01” is valid for the sequences “seq_001” to “seq_005”, “dataset_02” is valid for “seq_006” to “seq_011”.
+                    </p>
+                    <p>
+                    <b>Attention:</b> Currently, in "CameraModel.xml" the principal point c = (cx, cy) is given in pixel coordinates for an image resolution of 1024 x 1024 pixels. If one wants to use the camera model at full image resolution of 2048 x 2048 pixels, the principal point coordinates change as follows:<br />
+                    </p>
+                    <p>
+                    cx_new = (cx + 0.5) ⋅ 2 - 0.5<br />
+                    cy_new = (cy + 0.5) ⋅ 2 - 0.5
+                    </p>
+                    <p>
+                    At the same time the pixel size is halved. The shift of 0.5 occurs because the origin of the image coordinate frame is in the center of the upper left pixel.
+                    </p>
+
+                    </p>
+                    <b>[<a href="https://os5.mycloud.com/action/share/a25ce153-2e88-466c-8ffa-7aaeba1ba109" target="_blank">download complete calibration data</a>]</b>
+                    </p>
+                    
+                    dataset_01 [<a href="https://os5.mycloud.com/action/share/22f4f013-e611-41b8-b099-e95507dc0dee" target="_blank">plenoptic</a>] [<a href="https://os5.mycloud.com/action/share/ef5778a7-89a7-4ccf-a753-8245e3e38f16" target="_blank">stereo</a>]<br />
+                    dataset_02 [<a href="https://os5.mycloud.com/action/share/728ab63c-61a3-4fa3-8522-a18239e22fdb" target="_blank">plenoptic</a>] [<a href="https://os5.mycloud.com/action/share/b72fbfa1-72bf-45c4-85b5-fa3c940a6078" target="_blank">stereo</a>]
+                    </p>
+                </div>
+                <!--/ Camera Calibration. -->
+                
+                <!-- Evaluation Code. -->
+                <h3 class="title is-4">Preprocessing and Evaluation Code</h3>
+                <div class="content has-text-justified">
+                    <p>
+                    At the following link one can find a set of Matlab scripts to preprocess the raw image sequences and to evaluate estimated trajectories.
+                    </p>
+                    <p>
+                    Preprocessing comprises vignetting correction and debayering for the images of the plenoptic camera and vignetting correction and rectification for the stereo image pairs:
+                    </p>
+                    
+                    </p>
+                    <b>[<a href="https://os5.mycloud.com/action/share/9636c3ea-25bd-4c4b-9209-1cb8d992f191" target="_blank">download matlab code</a>]</b>
+                    </p>
+                </div>
+                <!--/ Evaluation Code. -->
+            </div>
+        </div>
+        <!--/ Data. -->
+        
+        <!-- License Terms. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">License Terms</h2>
+                <div class="content has-text-justified">
+                    <p>
+                    This dataset was developed at Karlsruhe University of Applied Sciences. The dataset, as well as all corresponding code, may be used freely for non-commercial purposes (see <a href="https://www.h-ka.de/fileadmin/Hochschule_Karlsruhe_HKA/Bilder_WE-ISRG/Publications/HKA_WE-ISRG-SoftwareLicenseHSKA.pdf" target="_blank">license terms</a> form details).
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--/ License Terms. -->
+    </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{zeller2018dataset,
+        title = {A Synchronized Stereo and Plenoptic Visual Odometry Dataset},
+        author = {N. Zeller and F. Quint and U. Stilla},
+        year = {2018},
+        journal = {arXiv preprint},
+        eprint = {1807.09372},
+        eprinttype = {arXiv},
+        primaryclass = {cs.CV},
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            This website was creaded based on the <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">nerfies webpage template</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
